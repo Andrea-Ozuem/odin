@@ -78,20 +78,20 @@ showButton.addEventListener("click", () => {
   dialog.showModal();
 });
 
-
+const form = document.querySelector("form");
 submit.addEventListener("click", (event) => {
-  const form = document.querySelector("form");
   if (form.checkValidity()) {
     event.preventDefault();
     const newBook = new Book(form.elements["title"].value, form.elements["author"].value, form.elements["pages"].value, form.elements["read"].value);
     addBookToLibrary(newBook);
     const books = document.getElementById('books');
     books.appendChild(createBookContent(newBook));
+    dialog.close();
   }
 });
 
 
-// Remove book & change Read statusfunctionality
+// Remove book & change Read status functionality
 books.addEventListener('click', (e) => {
   if (e.target) {
     const idx = e.target.parentElement.getAttribute('data-id');

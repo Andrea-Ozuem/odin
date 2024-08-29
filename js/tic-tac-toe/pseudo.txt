@@ -1,0 +1,25 @@
+checkWin -> function
+if cell 
+
+
+playRound -> function
+    if token added 
+        if checkWin
+            game ended
+        else
+            switchplayer, print new board
+    
+    
+
+Game flow:
+Loop:
+    get active_player
+    active_player plays (playRound)
+    check for win (checkWin): if win
+        end game & display winner
+    switch active player
+
+Board.addToken(row, col):
+    check for available cells
+    if (r,c) is valid, add on Board,
+    else return
