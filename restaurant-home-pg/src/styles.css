@@ -1,0 +1,146 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+    padding: 10px 6rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 0;
+    border-color: red;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;  
+}
+
+.row {
+    padding: 2rem;
+    background-color: grey;
+    border-radius: 10px;
+    height: 80vh;
+}
+
+.active {
+    background-color: wheat;
+    color: black;
+    font-weight: 600;
+    /* border: 0; */
+}
+
+.row-main {
+    background-blend-mode: multiply;
+    background-image: url('../assets/bg-content.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 7rem;
+    text-align: center;
+    font-family: cursive;
+    font-size: 4rem;
+}
+
+.intro {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.order {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding-inline: 2rem;
+}
+
+.location {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* menu */
+.row-menu {
+    background-color: wheat;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    margin: 5px;
+}
+
+.heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.d-flex > div {
+    flex: 1 1 0px;
+}
+
+li h4 {
+    margin-bottom: 0;
+}
+
+li p {
+    margin-top: 5px;
+}
+
+.menu-section__header {
+    background-color: red;
+    padding: 1.5rem 2rem 1rem 2rem;
+    margin-bottom: 0;
+    clip-path: polygon(40px 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, calc(100% - 40px) 100%, 40px 100%, 0 100%, 0 40px);
+}
+
+.menu-section__heading {
+    margin-block: 8px;
+}
+
+/* contact page */
+.row-contact {
+    background-color: wheat;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
